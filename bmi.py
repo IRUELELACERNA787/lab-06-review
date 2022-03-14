@@ -1,8 +1,9 @@
 import sys
 
-weight = input("What is your weight? (in pounds) \n")
-height = input("What is your height? (in inches) \n")
+weight = float(input("What is your weight? (in pounds) \n"))
+height = float(input("What is your height? (in inches) \n"))
 
-bmi = ((703 * float(weight))/pow(float(height),2))
+bmi = ((703 * weight)/(height*height))
+bmi = str(bmi)
 
-print("Your body mass index (BMI) is " + str(bmi)+"%")
+print("Your body mass index (BMI) is " + bmi+"%")
